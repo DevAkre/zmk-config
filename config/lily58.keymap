@@ -65,7 +65,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-
             bindings = <
 &kp ESC     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB     &kp Q   &kp W   &kp F     &kp P     &kp B                          &kp J   &kp L     &kp U      &kp Y    &kp SEMI  &kp MINUS
@@ -76,7 +75,6 @@
         };
 
         qwerty_layer {
-
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
@@ -87,21 +85,19 @@
         };
 
         lower_layer {
-
             bindings = <
 &kp K_LOCK  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans     &trans    &trans    &trans
 &kp F12     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                          &kp F6     &kp F7     &kp F8     &kp F9    &kp F10   &kp F11
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSLH
 &Z_SAVE     &Z_REDO       &kp K_CUT     &kp K_COPY    &kp K_PASTE   &Z_UNDO       &trans    &trans  &trans     &kp MINUS  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
         };
 
         raise_layer {
-
             bindings = <
 &kp K_LOCK  &trans              &trans        &trans        &trans        &trans                                &trans    &trans     &trans     &trans     &trans     &trans
-&trans      &trans              &trans        &kp C_BRI_DN  &kp C_BRI_UP  &trans                                &kp INS   &kp END    &kp PG_DN  &kp PG_UP  &kp HOME   &trans
+&trans      &trans              &trans        &kp C_BRI_DN  &kp C_BRI_UP  &trans                                &kp INS   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
 &trans      &kp LC(LS(LA(F1)))  &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &kp LC(LS(LA(F2)))                    &trans    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans      &trans              &kp C_REWIND  &kp C_PP      &kp C_FF      &trans              &trans    &trans  &kp PLUS  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
                                               &trans        &trans        &trans              &trans    &trans  &trans    &trans     &trans
@@ -109,7 +105,6 @@
         };
 
         window_layer {
-            
             bindings = <
 &trans  &trans                &trans                &trans              &trans                 &trans                        &trans      &trans            &trans            &trans           &trans             &trans
 &trans  &kp LC(F1)            &kp LC(F2)            &kp LC(F3)          &kp LC(F4)             &kp LC(F5)                    &kp LC(F6)  &kp LC(F7)        &kp LC(F8)        &kp LC(F9)       &kp LC(F10)        &trans
