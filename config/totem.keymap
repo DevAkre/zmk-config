@@ -58,7 +58,7 @@
         compatible = "zmk,combos";
 
         Sys_Layer_moment {
-            bindings = <&mo 8>;
+            bindings = <&sl 8>;
             key-positions = <20 31 34 35>;
         };
     };
