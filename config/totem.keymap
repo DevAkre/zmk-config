@@ -16,6 +16,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+
 #define Base        0
 #define Media       1
 #define Nav         2
@@ -26,6 +27,8 @@
 #define Button      7
 #define Game        8
 #define Gameplus    9
+
+#include "include/homerow_mods.h"
 
 &mt {
     quick-tap-ms = <100>;
@@ -70,7 +73,7 @@
             label = "Base";
             bindings = <
               &kp Q       &kp W           &kp F         &kp P         &kp B          &kp J        &kp L        &kp U        &kp Y       &kp SEMI
-              &hm LGUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LSHIFT T  &kp G          &kp M        &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
+              &hml LGUI A &hml LEFT_ALT R &hml LCTRL S  &hml LSHIFT T &kp G          &kp M        &hmr RSHFT N &hmr RCTRL E &hmr RALT I &hmr RGUI O
 &lt 4 ESCAPE  &kp Z       &kp X           &kp C         &kp D         &kp V          &kp K        &kp H        &kp COMMA    &kp DOT     &kp SLASH   &kp APOSTROPHE
                                           &lt 1 ESCAPE  &lt 2 TAB     &lt 3 SPACE    &lt 5 ENTER  &lt 6 BSPC   &lt 7 DEL
             >;
