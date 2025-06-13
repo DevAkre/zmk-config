@@ -31,7 +31,7 @@
 #define Game        8
 #define Gameplus    9
 
-#include "include/homerow_mods.h"
+#include "include/homerow_mods.dtsi"
 
 &mt {
     quick-tap-ms = <100>;
