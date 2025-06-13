@@ -16,6 +16,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+// Include the RGB LED widget for lighting effects
+#include <behaviors/rgbled_widget.dtsi> 
+
 
 #define Base        0
 #define Media       1
@@ -153,7 +156,7 @@
             bindings = <
                 &bt BT_CLR         &bootloader  &trans     &trans      &bt BT_SEL 0    &trans  &trans      &trans     &bootloader  &trans
                 &kp LGUI           &kp LALT     &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1    &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
-&studio_unlock  &ext_power EP_TOG  &trans       &trans     &trans      &bt BT_SEL 2    &trans  &trans      &trans     &trans       &trans    &trans
+&studio_unlock  &ext_power EP_TOG  &trans       &trans     &trans      &bt BT_SEL 2    &trans  &trans      &trans     &trans       &ind_con    &ind_bat
                                                 &trans     &trans      &trans          &trans  &trans      &trans
             >;
         };
